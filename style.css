@@ -1,9 +1,9 @@
-/* Подключение шрифтов */
-@import 'site/fonts/Gilroy/Gilroy.css';
-@import 'site/fonts/RoadRadio/RoadRadio.css';
+
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+@import url('https://fonts.cdnfonts.com/css/road-radio');
 
 
-/* Общие стили */
+
 body {
     font-family: 'RoadRadio', sans-serif;
     background-color: #292826;
@@ -16,7 +16,7 @@ header {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; Выровнено по левому краю */
+
     padding: 48px 48px 48px 48px;
     box-sizing: border-box;
     overflow:hidden;
@@ -78,33 +78,33 @@ header span {
     height: 40px;
 }
 
-/* Полоса со стрелками */
+
 .arrows {
-    cursor: pointer; /* Указатель для интерактивности */
+    cursor: pointer; 
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 24 24' fill='none' stroke='%23292826' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='12' y1='5' x2='12' y2='19'/%3E%3Cpolyline points='19 12 12 19 5 12'/%3E%3C/svg%3E");
-    background-color: #87CEFA; /* Цвет фона полосы */
-    background-repeat: repeat-y; /* Повтор стрелок вертикально */
-    background-size: 70px 70px; /* Размер одной стрелки */
-    animation: moveDown 1s linear infinite; /* Анимация прокрутки */
+    background-color: #87CEFA; 
+    background-repeat: repeat-y; 
+    background-size: 70px 70px; 
+    animation: moveDown 1s linear infinite; 
     position: absolute;
-    right: 20PX; /* Привязка к правому краю */
+    right: 20PX; 
     top: 0;
     bottom: 0;
-    width: 70px; /* Ширина полосы */
+    width: 70px;
 }
 
-/* Анимация движения стрелок */
+
 @keyframes moveDown {
     0% {
         background-position-y: 0px;
     }
     100% {
-        background-position-y: 70px; /* Сдвиг на высоту стрелки */
+        background-position-y: 70px; 
     }
 }
 
 
-/* Портфолио */
+
 .portfolio {
     padding: 50px 20px;
     background-color: #87CEFA;
@@ -180,30 +180,30 @@ header span {
     float: right;
 }
 
-/* Общие стили секции */
+
 .contact-section {
-    background-color: #1f1f1f; /* Тёмный фон */
-    text-align: center;       /* Центрирование содержимого */
+    background-color: #1f1f1f; 
+    text-align: center;       
     padding: 48px;
-    color: #ffffff;           /* Белый текст */
-    font-family: Arial, sans-serif; /* Шрифт */
+    color: #ffffff;           
+    font-family: Arial, sans-serif; 
 }
 
 
 
-/* Стиль заголовка с email */
+
 .email {
-    font-size: 28px;          /* Размер шрифта */
-    color: #3388f8;           /* Жёлтый цвет текста */
-    text-decoration: underline; /* Подчёркивание текста */
-    font-weight: bold;        /* Жирное начертание */
-    margin: 0;                /* Убираем отступы по умолчанию */
+    font-size: 28px;          
+    color: #3388f8;           
+    text-decoration: underline; 
+    font-weight: bold;       
+    margin: 0;                
 }
 
-/* Дополнительный текст */
+
 .message {
-    font-size: 16px;          /* Размер шрифта */
-    margin-top: 10px;         /* Отступ сверху */
-    color: #797979;              /* Серый цвет текста */
+    font-size: 16px;         
+    margin-top: 10px;         
+    color: #797979;             
 }
 
