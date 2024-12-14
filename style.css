@@ -1,6 +1,6 @@
 /* Подключение шрифтов */
-@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
-@import url('https://fonts.cdnfonts.com/css/road-radio');
+@import 'site/fonts/Gilroy/Gilroy.css';
+@import 'site/fonts/RoadRadio/RoadRadio.css';
 
 
 /* Общие стили */
@@ -25,7 +25,7 @@ header {
 .welcome{
     margin: 33px 0px;
     padding: 100px 0px;
-    color: #4282f9;
+    color: #87CEFA;
 
 }
 .work{
@@ -82,7 +82,7 @@ header span {
 .arrows {
     cursor: pointer; /* Указатель для интерактивности */
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 24 24' fill='none' stroke='%23292826' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='12' y1='5' x2='12' y2='19'/%3E%3Cpolyline points='19 12 12 19 5 12'/%3E%3C/svg%3E");
-    background-color: #3388f8; /* Цвет фона полосы */
+    background-color: #87CEFA; /* Цвет фона полосы */
     background-repeat: repeat-y; /* Повтор стрелок вертикально */
     background-size: 70px 70px; /* Размер одной стрелки */
     animation: moveDown 1s linear infinite; /* Анимация прокрутки */
@@ -107,12 +107,12 @@ header span {
 /* Портфолио */
 .portfolio {
     padding: 50px 20px;
-    background-color: #3388f8;
+    background-color: #87CEFA;
     color: #000;
     text-align: left;
 }
 .portfolio2{
-    color: #fff;
+    color: #000;
     font-size:96px;
 }
 .project-container {
@@ -120,25 +120,65 @@ header span {
     flex-wrap: wrap;
     gap: 15px;
 }
-.project {
+.portfolio-text{
+    margin: 0;
+    color: #000;
+}
+.project-discord {
+    font-family: 'Gilroy',sans-serif;
+    font-weight: bold;
     background: #f4f4f4;
+    margin-top: 5px;
     padding: 15px;
-    border-radius: 8px;
-    width: 220px;
+    border-radius: 10px;
+    width: 150px;
+    height: 80px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.5em;
+    display: block;
 }
-.project h3 {
-    font-size: 1.2rem;
+
+.invite-bot{
+    font-size: 10px;
+    opacity: 30%;
 }
+.project-container  :hover{
+    background-color: #292826;
+    transition: 0.3s;
+    color: #87CEFA;
+    scale: 1.05;
+    
+}
+
+.project-discord{
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    font-size: 1rem;
+}
+
 .status {
     font-size: 0.9rem;
     padding: 2px 8px;
     border-radius: 20px;
     font-weight: bold;
 }
-.status.on { background: #4caf50; color: #fff; }
-.status.off { background: #ff4d4f; color: #fff; }
-.status.pvt { background: #aa80ff; color: #fff; }
+.status.on { 
+    background: #4caf50;
+    color: #fff;
+    float:right;
+}
+.status.off { 
+    background: #ff4d4f; 
+    color: #fff; 
+    float: right;
+
+}
+.status.pvt { 
+    background: #aa80ff; 
+    color: #fff; 
+    float: right;
+}
 
 /* Общие стили секции */
 .contact-section {
@@ -164,5 +204,6 @@ header span {
 .message {
     font-size: 16px;          /* Размер шрифта */
     margin-top: 10px;         /* Отступ сверху */
-    color: #ccc;              /* Серый цвет текста */
+    color: #797979;              /* Серый цвет текста */
 }
+
