@@ -1,0 +1,168 @@
+/* Подключение шрифтов */
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+@import url('https://fonts.cdnfonts.com/css/road-radio');
+
+
+/* Общие стили */
+body {
+    font-family: 'RoadRadio', sans-serif;
+    background-color: #292826;
+    color: #fff;
+    overflow-x: hidden;
+    cursor: crosshair;
+    margin: 0;
+}
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; Выровнено по левому краю */
+    padding: 48px 48px 48px 48px;
+    box-sizing: border-box;
+    overflow:hidden;
+    position: relative;
+}
+.welcome{
+    margin: 33px 0px;
+    padding: 100px 0px;
+    color: #4282f9;
+
+}
+.work{
+    margin: 0;
+    font-size: 5rem;
+}
+.work2{
+    margin:0;
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+    margin:0;
+}
+header h1 {
+    font-weight: 700 bold;
+    height: 162px;
+    font-size: 144px;
+
+    margin: 0;
+}
+h5{
+    margin: 0;
+    font-size: 28px;
+}
+.welcome-item{
+    font-size: 19px;
+    margin-top: 8px;
+}
+header p {
+    margin: 0;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+header span {
+    color: #3388f8;
+    font-weight: bold;
+    
+}
+.skills {
+    display: absolute;
+    gap: 10px;
+    margin: 0px;
+}
+.skills img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Полоса со стрелками */
+.arrows {
+    cursor: pointer; /* Указатель для интерактивности */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 24 24' fill='none' stroke='%23292826' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='12' y1='5' x2='12' y2='19'/%3E%3Cpolyline points='19 12 12 19 5 12'/%3E%3C/svg%3E");
+    background-color: #3388f8; /* Цвет фона полосы */
+    background-repeat: repeat-y; /* Повтор стрелок вертикально */
+    background-size: 70px 70px; /* Размер одной стрелки */
+    animation: moveDown 1s linear infinite; /* Анимация прокрутки */
+    position: absolute;
+    right: 20PX; /* Привязка к правому краю */
+    top: 0;
+    bottom: 0;
+    width: 70px; /* Ширина полосы */
+}
+
+/* Анимация движения стрелок */
+@keyframes moveDown {
+    0% {
+        background-position-y: 0px;
+    }
+    100% {
+        background-position-y: 70px; /* Сдвиг на высоту стрелки */
+    }
+}
+
+
+/* Портфолио */
+.portfolio {
+    padding: 50px 20px;
+    background-color: #3388f8;
+    color: #000;
+    text-align: left;
+}
+.portfolio2{
+    color: #fff;
+    font-size:96px;
+}
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.project {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.project h3 {
+    font-size: 1.2rem;
+}
+.status {
+    font-size: 0.9rem;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.status.on { background: #4caf50; color: #fff; }
+.status.off { background: #ff4d4f; color: #fff; }
+.status.pvt { background: #aa80ff; color: #fff; }
+
+/* Общие стили секции */
+.contact-section {
+    background-color: #1f1f1f; /* Тёмный фон */
+    text-align: center;       /* Центрирование содержимого */
+    padding: 48px;
+    color: #ffffff;           /* Белый текст */
+    font-family: Arial, sans-serif; /* Шрифт */
+}
+
+
+
+/* Стиль заголовка с email */
+.email {
+    font-size: 28px;          /* Размер шрифта */
+    color: #3388f8;           /* Жёлтый цвет текста */
+    text-decoration: underline; /* Подчёркивание текста */
+    font-weight: bold;        /* Жирное начертание */
+    margin: 0;                /* Убираем отступы по умолчанию */
+}
+
+/* Дополнительный текст */
+.message {
+    font-size: 16px;          /* Размер шрифта */
+    margin-top: 10px;         /* Отступ сверху */
+    color: #ccc;              /* Серый цвет текста */
+}
