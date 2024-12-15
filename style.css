@@ -16,7 +16,6 @@ header {
     height: 100vh;
     display: flex;
     flex-direction: column;
-
     padding: 48px 48px 48px 48px;
     box-sizing: border-box;
     overflow:hidden;
@@ -82,15 +81,15 @@ header span {
 .arrows {
     cursor: pointer; 
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 24 24' fill='none' stroke='%23292826' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='12' y1='5' x2='12' y2='19'/%3E%3Cpolyline points='19 12 12 19 5 12'/%3E%3C/svg%3E");
-    background-color: #87CEFA; 
-    background-repeat: repeat-y; 
+    background-color: #87CEFA;
+    background-repeat: repeat-y;
     background-size: 70px 70px; 
-    animation: moveDown 1s linear infinite; 
+    animation: moveDown 1s linear infinite;
     position: absolute;
     right: 20PX; 
     top: 0;
     bottom: 0;
-    width: 70px;
+    width: 70px; 
 }
 
 
@@ -99,7 +98,7 @@ header span {
         background-position-y: 0px;
     }
     100% {
-        background-position-y: 70px; 
+        background-position-y: 70px;
     }
 }
 
@@ -142,6 +141,7 @@ header span {
     font-size: 11px;
     opacity: 50%;
 }
+
 .project-container  :hover{
     background-color: #292826;
     transition: 0.3s;
@@ -150,11 +150,28 @@ header span {
     
 }
 
-.project-discord{
-    text-decoration: none;
-    outline: none;
+.project-discord {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+    background: #f4f4f4;
+    margin-top: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 150px;
+    height: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.5em;
+    display: block;
     color: #000;
-    font-size: 1rem;
+    transition: all 0.3s ease; 
+}
+
+
+.project-discord:hover {
+    background-color: #292826;  
+    color: #87CEFA;             
+    transform: scale(1.05);     
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .status {
@@ -182,8 +199,8 @@ header span {
 
 
 .contact-section {
-    background-color: #1f1f1f; 
-    text-align: center;       
+    background-color: #1f1f1f;
+    text-align: center;     
     padding: 48px;
     color: #ffffff;           
     font-family: Arial, sans-serif; 
@@ -194,16 +211,17 @@ header span {
 
 .email {
     font-size: 28px;          
-    color: #3388f8;           
+    color: #3388f8;         
     text-decoration: underline; 
-    font-weight: bold;       
-    margin: 0;                
+    font-weight: bold;        
+    margin: 0;               
 }
 
 
 .message {
     font-size: 16px;         
-    margin-top: 10px;         
+    margin-top: 10px;        
     color: #797979;             
 }
+
 
