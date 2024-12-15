@@ -125,6 +125,7 @@ header span {
     color: #000;
 }
 .project-discord {
+    text-decoration: none;
     font-family: 'Gilroy',sans-serif;
     font-weight: bold;
     background: #f4f4f4;
